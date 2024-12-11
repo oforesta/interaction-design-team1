@@ -9,9 +9,9 @@ document.addEventListener("DOMContentLoaded", function () {
             { id: 3, departure: "2024-12-10", return: "2024-12-25", destination: "New York", price: 700, image: "images/new-york.jpg" },
             { id: 4, departure: "2024-12-01", return: "2024-12-15", destination: "Amsterdam", price: 500, image: "images/amsterdam.jpg" },
             { id: 5, departure: "2024-12-05", return: "2024-12-20", destination: "Lisbon", price: 450, image: "images/portugal.jpg" },
-            { id: 6, departure: "2024-12-10", return: "2024-12-25", destination: "Rome", price: 700, image: "images/rome.jpg" },
+            { id: 6, departure: "2024-12-10", return: "2024-12-25", destination: "Berlin", price: 220, image: "images/berlin.jpg" },
             { id: 7, departure: "2024-12-10", return: "2024-12-25", destination: "Rome", price: 700, image: "images/rome.jpg" },
-            { id: 7, departure: "2024-12-10", return: "2024-12-25", destination: "Rome", price: 700, image: "images/rome.jpg" }
+            { id: 7, departure: "2024-12-10", return: "2024-12-25", destination: "Budapest", price: 700, image: "images/budapest.jpg" }
         ];
         
 
