@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UFT-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <!---- <link ref="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/> -->
+        <link rel="stylesheet" href="style/style.css">
+        <title>Everywherizz</title>
+    </head>
+    <body>
+        <nav>
+            <div class="nav_header">
+                <div class="nav_logo">
+                    <a href="index.html" class="logo">Everywherizz</a>
+                </div>
+                <div class="nav_menu_btn" id="menu_btn">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </div>
+                <ul class="nav_links" id="nav_links">
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#booking">BOOKING</a></li>
+                    <li><a href="#deals">DEALS</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="profile.html"><img src="images/icons/profile.svg" alt="Profile" class="profile-icon"></a></li>
+                </ul>
+        </nav>
+
+        <header id="home">
+            <div class="header_container">
+                <div class="header_content">
+                    <p> CREATE THE BEST MEMORIES</p>
+                    <h1>Experience the Magic!</h1>
+                </div>
+            </div>
+        </header>
+
+        <div class="section_container" id="booking">
+            <h2 class="section_header">Book Your Flight</h2>
+            <p class="section_description">
+                Plan your next adventure with ease. Fill in the details below to get started!
+            </p>
+            <div class="flight_booking_form">
+                <h2>Book Your Flight</h2>
+                <form id="flightBookingForm">
+                    <div class="form_group">
+                        <label for="departure">Departure Date:</label>
+                        <input type="date" id="departure" name="departure" min="" required>
+                    </div>
+            
+                    <div class="form_group">
+                        <label for="return">Return Date:</label>
+                        <input type="date" id="return" name="return" min="" required>
+                    </div>
+            
+                    <div class="form_group">
+                        <label for="destination">Destination:</label>
+                        <input type="text" id="destination" name="destination" placeholder="Enter your destination" required>
+                    </div>
+            
+                    <div class="form_group">
+                        <label for="people">Number of People:</label>
+                        <input type="number" id="people" name="people" min="" placeholder="0" required>
+                    </div>
+            
+                    <div class="form_group">
+                        <label for="luggage">Pieces of Luggage:</label>
+                        <input type="number" id="luggage" name="luggage" min="0" max="5" placeholder="0">
+                        <small>Max. 5 pieces of luggage</small>
+                    </div>
+            
+                    <button type="submit" class="btn">Book Flight</button>
+                </form>
+            </div>  
+
+            <!--popular destinations-->
+            <section class="section_container destination_container" id="deals">
+                <h2 class="section_header">Popular Destination</h2>
+                <p class="section_description">
+                  Discover the Most Loved Destinations Around the Europe
+                </p>
+                <div class="destination_grid">
+                  <div class="destination_card">
+                    <img src="images/rome.jpg" alt="destination" />
+                    <div class="destination_card_details">
+                      <div>
+                        <h4>Eternal charm</h4>
+                        <p>Rome, Italy</p>
+                      </div>
+                      <div class="destination_rating">
+                        <span><i class="ri-star-fill"></i></span>
+                        4.7
+                      </div>
+                    </div>
+                  </div>
+                  <div class="destination_card">
+                    <img src="images/portugal.jpg" alt="destination" />
+                    <div class="destination_card_details">
+                      <div>
+                        <h4>Sunlit hills</h4>
+                        <p>Lisabon, Portugal</p>
+                      </div>
+                      <div class="destination_rating">
+                        <span><i class="ri-star-fill"></i></span>
+                        4.5
+                      </div>
+                    </div>
+                  </div>
+                  <div class="destination_card">
+                    <img src="images/paris.jpg" alt="destination" />
+                    <div class="destination_card_details">
+                      <div>
+                        <h4>Timeless romance</h4>
+                        <p>Paris, France</p>
+                      </div>
+                      <div class="destination_rating">
+                        <span><i class="ri-star-fill"></i></span>
+                        4.8
+                      </div>
+                    </div>
+                  </div>
+                  <div class="destination_card">
+                    <img src="images/budapest.jpg" alt="destination" />
+                    <div class="destination_card_details">
+                      <div>
+                        <h4>Danube's jewel</h4>
+                        <p>Budapest, Hungary</p>
+                      </div>
+                      <div class="destination_rating">
+                        <span><i class="ri-star-fill"></i></span>
+                        4.8
+                      </div>
+                    </div>
+                  </div>
+                  <div class="destination_card">
+                    <img src="images/london.jpg" alt="destination" />
+                    <div class="destination_card_details">
+                      <div>
+                        <h4>Harmony of past and future</h4>
+                        <p>London, Great Britain</p>
+                      </div>
+                      <div class="destination_rating">
+                        <span><i class="ri-star-fill"></i></span>
+                        4.8
+                      </div>
+                    </div>
+                  </div>
+                  <div class="destination_card">
+                    <img src="images/palma-de-mallorka.jpg" alt="destination" />
+                    <div class="destination_card_details">
+                      <div>
+                        <h4>Mediterranean paradise</h4>
+                        <p>Palma-de-Mallorka, Spain</p>
+                      </div>
+                      <div class="destination_rating">
+                        <span><i class="ri-star-fill"></i></span>
+                        4.8
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+
+        <section class="section_container banner_container" id="about">
+            <div class="banner_card">
+              <h4>5+</h4>
+              <p>Years Experience</p>
+            </div>
+            <div class="banner_card">
+              <h4>40K</h4>
+              <p>Happy Clients</p>
+            </div>
+            <div class="banner_card">
+              <h4>4.9</h4>
+              <p>Overall Ratings</p>
+            </div>
+          </section>
+
+          <!--footer-->
+
+          <footer>
+
+            <div class="icon-section-main">
+                <div class="line"></div>
+                <div class="icon-section-inner">
+                    <a class="icon" href="https://www.facebook.com/"><img src="images/icons/facebook.svg" /></a>
+                    <a class="icon" href="https://www.instagram.com/"><img src="images/icons/instagram.svg" /></a>
+                    <a class="icon" href="https://www.linkedin.com/"><img src="images/icons/linkedin.svg" /></a>
+                    <a class="icon" href="https://www.youtube.com/"><img src= "images/icons/youtube.svg" /></a>
+                </div>
+                <div class="line"></div>
+            </div>
+
+            <div class="footer-info">
+                <h3>Everywherizz</h3>
+                <p>Copyright 2024 Everywherizz, Inc.</p>
+
+                <div class="footer-info-links">
+                    
+                    <a href="#" >Privacy Policy</a>
+                    <a href="#" >Security</a>
+                    
+                    <a href="#" >Website Accessibility</a>
+                    <a href="#" >Cookies </a>
+                </div>
+            </div>
+
+        </footer>
+
+
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

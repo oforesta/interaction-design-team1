@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav_header">
+            <div class="nav_logo">
+                <a href=index.html" class="logo">Everywherizz</a>
+            </div>
+            <div class="nav_menu_btn" id="menu_btn">
+                <i class="ri-menu-line"></i>
+            </div>
+        </div>
+            <ul class="nav_links" id="nav_links">
+                <a href="index.html" class="back-btn">← Back to Search</a>
+            </ul>
+    </nav>
+    <main class="profile-container">
+        <div class="profile-info">
+            <img src="/images/icons/profile.svg" alt="User Avatar" class="profile-avatar">
+            <h2 class="user-name">John Doe</h2>
+        </div>
+        <a href="login.html" class="back-btn">Log Out</a>
+        <div class="profile-tabs">
+            <button class="tab-btn active" data-tab="trips">Trips</button>
+            <button class="tab-btn" data-tab="settings">Settings</button>
+        </div>
+        <div class="tab-content">
+            <div id="trips" class="tab-pane active">
+                <h3>Your Trips</h3>
+                <p>No trips booked yet.</p>
+            </div>
+            <div id="settings" class="tab-pane">
+                <h3>Settings</h3>
+                <div id="settings" class="tab1-content">
+                    <div id="settings" class="tab1-content">
+                        <div class="settings-card">
+                            <img src="/images/icons/information.png" alt="Account Settings" class="card1-img">
+                            <h3 class="card1-title">Account Information</h3>
+                            <a href="info.html " class="card1-btn">Open</a>
+                        </div>
+                        <div class="settings1-card">
+                            <div class="settings-card">
+                                <img src="/images/icons/security.png" alt="Privacy and Security" class="card1-img">
+                                <h3 class="card1-title">Privacy and Security</h3>
+                                <a href="security.html" class="card1-btn">Open</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>                
+            </div>
+        </div>
+    </main>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
