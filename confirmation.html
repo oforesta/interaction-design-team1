@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/payment.css">
+</head>
+<body>
+    <section class="form-container">
+        <form>
+            <p>Last steps..</p>
+            <p>enter the following data to receive a letter in your email inbox 🐰</p>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required placeholder="Your name" />
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Email" />
+            </div>
+        </form>
+        
+        <button onclick="sendEmail()"><a style="color: black" href="index.html">confirm</a></button>
+
+    </section>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "KcjWxM6kkxZpH-GSX",
+      });
+   })();
+</script>
+
+
+    <script>
+        function sendEmail() {
+    let parms = {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+    }
+    emailjs.send("service_jkr2ytg", "template_dsusvwx", parms);
+}
+</script>
+
+  <!--- <script src="js/confirmation.js"></script> -->
+</body>
+</html>

@@ -71,4 +71,6 @@ document.addEventListener('DOMContentLoaded', () => {
         errorElement.style.display = "none";
         inputElement.classList.remove('invalid');
     }
+
+    
 });

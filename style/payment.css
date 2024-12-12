@@ -289,3 +289,7 @@ input::placeholder, textarea::placeholder {
 .error-message {
     color: #c91616;
 }
+
+p {
+    color: #F8FAFC;
+}
